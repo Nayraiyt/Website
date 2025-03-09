@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="indexS.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+ 
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar__container">
+        <a href="/" id="navbar__logo">「 ✦ Nay ✦ 」</a>
+        <div class="navbar__toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="/" class="navbar__links">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/art.html" class="navbar__links">Art</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/tech.html" class="navbar__links">Tech</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/volleyball.html" class="navbar__links">Volleyball</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="/" class="button">About Me :D</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!--hero section -->
+    <div class="main" >
+      <div class="main__container">
+        <div class="main__content">
+        </div>
+        <div class="main__img--container"></div>
+          <img src="images/AboutMe.PNG" alt="pic" id="main__img">
+      </div>
+    </div>
+
+    <!--Other-->
+    <div class="project">
+          <!--Project1 --> 
+      <div class="project-card">
+        <h2 class="project-title"> Education</h2>
+        <p class="project-description">Currently, I attend Earl of March Secondary School!</p>
+        <li class="project__btn">  
+          <button class="project__button" onClick="toggleDetails(1)">
+              Learn more</button>
+        </li>
+        <div id="details-1" class="project-details" >
+          <p>This project .....</p>
+        </div>
+      </div>
+    
+      <!--Project2 --> 
+      <div class="project-card">
+        <h2 class="project-title"> Project 2</h2>
+        <p class="project-description">this is project number 2 blah balh blh</p>
+        <li class="project__btn">
+          <button class="project__button" onClick="toggleDetails(2)">
+          Learn more</button>
+        </li>
+        <div id="details-2" class="project-details">
+          <p>This project .....</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="space"></div>
+
+   <!--footer -->
+   <div class="footer__container">
+    <div class="social__media">
+      <div class="social__media--wrap">
+        <li class="footer__btn">
+          <a href="https://www.youtube.com/@nayraiyt" class="fbutton" target="_blank">
+            Youtube
+          </a>
+        </li>
+        <li class="footer__btn">
+          <a href="https://www.instagram.com/nouamu_cheng/" class="fbutton" target="_blank">
+            Instagram</a>
+        </li>
+      </div>
+    </div>
+   </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
