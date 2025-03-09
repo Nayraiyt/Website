@@ -1,0 +1,399 @@
+*{
+    box-sizing: border-box;
+    font-family:'Kumbh Sans', sans-serif; 
+    font-size: 20px; font-style: normal; font-variant: normal; 
+    font-weight: 700; line-height: 26.4px;
+} 
+
+.navbar{
+    background: #B6C5ED;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container{
+    display:flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+#navbar__logo{
+    background: #ff8177;
+    background-image: linear-gradient(to top, #ffffff 0%, #F6DDDB 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-tex-fill-color: transparent;
+    display:flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.fa-gem{
+    margin-right:0.5rem;
+}
+
+.navbar__menu{
+    display:flex;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item{
+    height: 80px;
+
+}
+
+.navbar__links{
+    color: #FBF8FA;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+}
+
+.navbar__btn{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.button{
+    color:#b6c5ed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #b6c5ed
+}
+
+.button:hover{
+    background: #B6C5ED;;
+    color:#b6c5ed;
+    transition: all 0.3s ease;
+}
+
+.navbar__links:hover{
+    color:#7485b3;
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 960px){
+    .navbar__container{
+        display:flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1;
+        width: 100%;
+        max-width: 1300px;
+        padding: 0;
+    }
+    .navbar__menu{
+        display:grid;
+        grid-template-columns: auto;
+        margin: 0;
+        width: 100%;
+        position: absolute;
+        top: -100vh;
+        opacity: 0; 
+        transition: all 0.5 ease;
+        height: 50vh;
+        z-index: -1;
+        background: #B6C5ED;
+    }
+
+    .navbar__menu.active{
+        background:#B6C5ED;
+        top: 80px;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 99;
+        height: 50vh;
+        font-size:1.6rem;
+    }
+
+    #navbar__logo{
+        padding-left: 25px;
+    }
+
+    .navbar__toggle .bar{
+        width:25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background: #ffffff;
+    }
+
+    .navbar__item{
+        width:100%
+    }
+    .navbar__links{
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        display: table;
+    }
+
+    #mobile-menu{
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        transform: translate(5%, 20%);
+    }
+
+    .navbar__btn{
+        padding-bottom: 2rem;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        height: 80px;
+        margin: 0;         
+        color:#8ea5e4;
+        background: #f0f1f7;
+    }
+    .button:hover{
+        background: #ffffff;;
+        color:#b6c5ed;
+        transition: all 0.3s ease;
+    }
+
+    .navbar__toggle .bar {
+        display: block;
+        cursor: pointer;
+    }
+    
+    #mobile-menu.is-active .bar:nth-child(2){
+        opacity: 0;
+    }
+    #mobile-menu.is-active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    #mobile-menu.is-active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
+
+/* Hero Section */
+.main{
+    background-color: #ffffff;
+}
+.main__container{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self:center;
+    margin: 0 auto;
+    height: auto;
+    background-color: #ffffff;
+    z-index:1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 10px 50px;
+}
+
+.main__img--container {
+    text-align: center;
+    justify-self: center;
+    padding: 0 25px;
+}
+
+#main__img{
+    width: 90%;
+}
+
+/* mobile responcse*/
+
+@media screen and (max-width: 768px){
+    .main__container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center;
+        width: 100%;
+        margin:auto;
+        height:90vh;
+    }
+    
+}
+
+/*learn more*/
+
+/* Footer container */
+.footer__container {
+    background: #B6C5ED;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+/* Social icon link container */
+.social__icon--link {
+    padding: 0 3rem;
+}
+
+/* Social media wrap container */
+.social__media--wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    max-width: 1000px; 
+    margin: 40px auto 0;
+}
+
+/* Social media links */
+.social__media a {
+    color: #7485b3;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+}
+
+/* Hover effect for social media links */
+.social__media a:hover {
+    color: #b6c5ed;
+    transition: color 0.3s ease-out; /* Improved specificity */
+}
+
+.footer__btn{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.fbutton{
+    color:#b6c5ed;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #f0f1f7
+}
+
+.fbutton:hover{
+    background: #ffffff;
+    color:#8ea5e4;
+    transition: all 0.3s ease;
+}
+
+/* Projects container styling */
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Creates two columns */
+    gap: 20px; /* Adds space between grid items */
+    align-items: center;
+    justify-items: center; /* Ensures items are centered */
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+}
+
+/* Styling for individual project cards */
+.project-card {
+    background-color: #FBF8FA;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for project cards */
+.project-card:hover {
+    transform: translateY(-5px); /* Lifts the card on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Deeper shadow effect on hover */
+}
+
+/* Styling for the project details section */
+.project-details {
+    display: none;
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Add a simple transition for the details section when toggled */
+.project-details.show {
+    display: block;
+    transition: display 0.5s ease;
+}
+
+.project__btn{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.project__button{
+    color:#FBF8FA;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 20px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: #D1C2ED
+}
+
+.project__button:hover{
+    background: #FBF8FA;;
+    color:#D1C2ED;
+    transition: all 0.3s ease;
+}
+
+
+.space{
+    padding: 60px;
+}
